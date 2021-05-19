@@ -32,6 +32,7 @@ public class PointType implements UserType {
     return 0;
   }
 
+  
   @Override
   public Object nullSafeGet(ResultSet rs, String[] names, SharedSessionContractImplementor session,
                             Object owner) throws HibernateException, SQLException {
