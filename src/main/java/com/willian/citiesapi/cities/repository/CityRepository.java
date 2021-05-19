@@ -1,4 +1,6 @@
-package com.willian.citiesapi.cities;
+package com.willian.citiesapi.cities.repository;
+
+import com.willian.citiesapi.cities.entities.City;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

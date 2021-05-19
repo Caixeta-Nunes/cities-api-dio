@@ -1,9 +1,12 @@
-package com.willian.citiesapi.cities;
+package com.willian.citiesapi.cities.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.willian.citiesapi.cities.services.PointType;
+
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;

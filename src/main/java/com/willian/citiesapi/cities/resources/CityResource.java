@@ -1,4 +1,7 @@
-package com.willian.citiesapi.cities;
+package com.willian.citiesapi.cities.resources;
+
+import com.willian.citiesapi.cities.entities.City;
+import com.willian.citiesapi.cities.repository.CityRepository;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

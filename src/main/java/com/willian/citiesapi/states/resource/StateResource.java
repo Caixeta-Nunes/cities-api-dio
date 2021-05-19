@@ -1,6 +1,10 @@
-package com.willian.citiesapi.states;
+package com.willian.citiesapi.states.resource;
 
 import java.util.List;
+
+import com.willian.citiesapi.states.entity.State;
+import com.willian.citiesapi.states.respository.StateRepository;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

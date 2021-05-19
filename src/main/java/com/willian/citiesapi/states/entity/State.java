@@ -1,7 +1,8 @@
-package com.willian.citiesapi.states;
+package com.willian.citiesapi.states.entity;
 
-import com.willian.citiesapi.countries.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import com.willian.citiesapi.countries.entities.Country;
+
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Column;

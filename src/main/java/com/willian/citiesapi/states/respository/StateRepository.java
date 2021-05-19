@@ -1,4 +1,6 @@
-package com.willian.citiesapi.states;
+package com.willian.citiesapi.states.respository;
+
+import com.willian.citiesapi.states.entity.State;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

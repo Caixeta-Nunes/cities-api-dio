@@ -1,5 +1,9 @@
-package com.willian.citiesapi.countries;
+package com.willian.citiesapi.countries.resources;
+
 import java.util.Optional;
+
+import com.willian.citiesapi.countries.entities.Country;
+import com.willian.citiesapi.countries.repositories.CountryRepository;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,4 +1,4 @@
-package com.willian.citiesapi.cities;
+package com.willian.citiesapi.cities.services;
 
 import java.io.Serializable;
 import java.sql.PreparedStatement;

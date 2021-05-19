@@ -1,4 +1,4 @@
-package com.willian.citiesapi.distance;
+package com.willian.citiesapi.distance.resource;
 
 import com.willian.citiesapi.distance.service.DistanceService;
 

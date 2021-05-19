@@ -1,8 +1,8 @@
 package com.willian.citiesapi.distance.service;
 
 
-import com.willian.citiesapi.cities.City;
-import com.willian.citiesapi.cities.CityRepository;
+import com.willian.citiesapi.cities.entities.City;
+import com.willian.citiesapi.cities.repository.CityRepository;
 
 import java.util.Arrays;
 import java.util.List;
