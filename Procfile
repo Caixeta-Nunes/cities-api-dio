@@ -1,1 +1,0 @@
-web: java -jar -Dspring.profiles.active=heroku target/citiesapi-0.0.1-SNAPSHOT.jar
