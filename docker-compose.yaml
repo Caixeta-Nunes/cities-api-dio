@@ -1,0 +1,47 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres_user_city    
+      POSTGRES_PASSWORD: super_password
+      POSTGRES_DB: cities 
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - spring-cloud-network
+      
+  citiesapi:
+    image: citiesapi
+    build:
+      context: citiesapi
+      dockerfile: Dockerfile
+    container_name: citiesapi
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/cities
+      - SPRING_DATASOURCE_USERNAME=postgres_user_city
+      - SPRING_DATASOURCE_PASSWORD=super_password
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+        - 8080:8080
+    networks:
+      - spring-cloud-network
+
+networks:
+  spring-cloud-network:
+    driver: bridge   
+
+volumes: 
+  pgdata:
+
+
+
